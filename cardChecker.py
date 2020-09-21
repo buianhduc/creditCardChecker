@@ -1,6 +1,6 @@
 def LuhnAlgorithm(creditCard):
     nDigits = len(creditCard)
-    nSum = 0;
+    nSum = 0
     isSecond = False
     for i in range(len(creditCard)-1,-1,-1):
         d = int(creditCard[i])
@@ -13,9 +13,3 @@ def LuhnAlgorithm(creditCard):
 
         isSecond = not isSecond
     return (nSum % 10 == 0)
-
-creditCard = input()
-if(LuhnAlgorithm(creditCard)):
-    print("yesssss")
-else:
-    print("fuckk you")
