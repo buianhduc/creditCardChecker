@@ -8,8 +8,8 @@ def index():
     if request.method == "GET":
         return render_template('index.html')
     elif request.method == "POST":
-        cardNumInput = request.form
+        cardNumInput = request.form #get user input
         isCreditCardNumberReal = cardChecker.LuhnAlgorithm(cardNumInput['userInput'])
         return render_template('index.html',result = isCreditCardNumberReal)
 
-app.run()
+app.run(debug=True)
