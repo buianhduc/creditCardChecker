@@ -49,11 +49,11 @@
 <script src="{{url_for('static', filename='script.js') }}"></script>
 {% if result == true%}
 <script>
-  alert("This credit card number is real");
+  alert("This credit card number is valid");
 </script>
 {%elif result == false%}
 <script>
-  alert("This credit card number is fake");
+  alert("This credit card number isn't valid");
 </script>
 {%endif%}
 
