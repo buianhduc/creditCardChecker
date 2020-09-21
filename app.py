@@ -6,7 +6,7 @@ app = Flask(__name__,template_folder='template',static_folder='static')
 @app.route('/', methods = ["GET","POST"])
 def index():
     if request.method == "GET":
-        return render_template('index.html', check = -1)
+        return render_template('index.html')
     elif request.method == "POST":
         cardNumInput = request.form
         isCreditCardNumberReal = cardChecker.LuhnAlgorithm(cardNumInput['userInput'])
