@@ -1,8 +1,8 @@
 body {
-    width: 100vw;
-    height: 100vh;
-    background-image: url(https://images.unsplash.com/photo-1600669091588-8aaac09509ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
-  }
-  .card-container{
-    padding-top: 10%;
-  }
+  width: 100vw;
+  height: 100vh;
+  background-image: url(https://images.unsplash.com/photo-1600669091588-8aaac09509ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+}
+.card-container {
+  padding-top: 10%;
+}
