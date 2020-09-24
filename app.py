@@ -11,5 +11,3 @@ def index():
         cardNumInput = request.form #get user input
         isCreditCardNumberReal = cardChecker.LuhnAlgorithm(cardNumInput['userInput'])
         return render_template('index.html',result = isCreditCardNumberReal)
-
-app.run(debug=True)
